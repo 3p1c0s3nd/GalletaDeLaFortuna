@@ -11,10 +11,10 @@ function App() {
   const [phrase, setPhrase] = useState(randomArray(phrases));
   //console.log(phrase);
   const fondos = [
-    '../src/assets/fondo1.jpg',
-    '../src/assets/fondo2.jpg',
-    '../src/assets/fondo3.jpg',
-    '../src/assets/fondo4.jpg',
+    './assets/fondo1.jpg',
+    './assets/fondo2.jpg',
+    './assets/fondo3.jpg',
+    './assets/fondo4.jpg',
   ]
   const fondonuevo = randomArray(fondos);
 
