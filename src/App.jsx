@@ -11,24 +11,25 @@ function App() {
   const [phrase, setPhrase] = useState(randomArray(phrases));
   //console.log(phrase);
   const fondos = [
-    'https://github.com/3p1c0s3nd/GalletaDeLaFortuna/blob/main/src/assets/fondo1.jpg?raw=true',
-    'https://github.com/3p1c0s3nd/GalletaDeLaFortuna/blob/main/src/assets/fondo2.jpg?raw=true',
-    'https://github.com/3p1c0s3nd/GalletaDeLaFortuna/blob/main/src/assets/fondo3.jpg?raw=true',
-    'https://github.com/3p1c0s3nd/GalletaDeLaFortuna/blob/main/src/assets/fondo4.jpg?raw=true',
+    '../fondo1.jpg',
+    '../fondo2.jpg',
+    '../fondo3.jpg',
+    '../fondo4.jpg',
   ]
   const fondonuevo = randomArray(fondos);
 
   return (
     <>
-      <div className="div__container" style={{backgroundImage: `url(${fondonuevo})`}}>
-        <h1 className="h1__title spaces">GALLETAS DE LA</h1> <h1 className="h1__title"> FORTUNA</h1>
+      <div className="app" style={{backgroundImage: `url('${fondonuevo}')`}}>
+        <h1 className="app__title">GALLETAS DE LA FORTUNA</h1> 
+        <article className="app__card">
         <ComponentPhrase 
           objetwithdata={phrase} 
         />
         <ComponentButton
           setPhrase={setPhrase}
-          fondos={fondos}
         />
+        </article>
       </div>
     </>
   )

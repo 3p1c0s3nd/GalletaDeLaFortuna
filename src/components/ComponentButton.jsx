@@ -21,9 +21,7 @@ const ComponentButton = ({setPhrase}) => {
 
 
     return(
-        <div className="div__button">
-            <button className="button__phrase" onClick={ChangePhrase}>ver otro</button> 
-        </div>
+            <button className="app__btn" onClick={ChangePhrase}>ver otro</button> 
     );
 }
 
