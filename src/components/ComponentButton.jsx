@@ -8,9 +8,12 @@ const ComponentButton = ({setPhrase}) => {
 
     const ChangePhrase = () => {
         axios('https://api.quotable.io/random').then((res) => {
+            
             const nuevafrase = res.data.content;
+            setPhrase(nuevafrase);
             const frase = document.querySelector(".app__phrase");
             frase.textContent = nuevafrase;
+            
         }).catch((error) => {
             console.log(error);
         })
