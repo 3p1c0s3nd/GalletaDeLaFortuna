@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 
 En este primer ejemplo estamos usando una api en internet que nos da frases en ingles, https://api.quotable.io/random, hacemos uso de la funcion axis para conectarnos a la api extraer la informacion y luego con ayuda de javascript ingresamos los valores en nuestro sitio web. Para probar el sitio web  localmente.
 
-git clone https://github.com/3p1c0s3nd/GalletaDeLaFortuna.git\n
+git clone https://github.com/3p1c0s3nd/GalletaDeLaFortuna.git
 
 cd GalletaDeLaFortuna\n
 npm install\n
