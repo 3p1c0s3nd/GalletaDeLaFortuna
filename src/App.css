@@ -41,6 +41,12 @@
     transition: font-size 100ms ease;
 }
 
+
+
 .app__btn:hover{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+}
+
+.app__btn:active{
+    transform: scale(0.9);
 }

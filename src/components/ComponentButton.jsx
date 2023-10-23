@@ -1,27 +1,29 @@
 import phrases from '../utils/phrases.json'
 import  randomArray  from '../services/getRandomFromArr'
-
+import axios from 'axios'
+import React from 'react'
 
 
 const ComponentButton = ({setPhrase}) => {
 
     const ChangePhrase = () => {
-       /* fetch('https://api.quotable.io/random').then((response) => {
-            return response.json();
-        }).then((data) => {
-            const nuevafrase = data.content;
+        axios('https://api.quotable.io/random').then((res) => {
+            const nuevafrase = res.data.content;
+            const frase = document.querySelector(".app__phrase");
+            frase.textContent = nuevafrase;
         }).catch((error) => {
             console.log(error);
-        })*/
+        })
+        
 
-        const newpharse = randomArray(phrases);
-        setPhrase(newpharse);
+        //const newpharse = randomArray(phrases);
+        //setPhrase(newpharse);
        
     };
 
 
     return(
-            <button className="app__btn" onClick={ChangePhrase}>ver otro</button> 
+            <button className="app__btn" onClick={ChangePhrase}>Other Cookie</button> 
     );
 }
 

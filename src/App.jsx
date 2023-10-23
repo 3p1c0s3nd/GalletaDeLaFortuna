@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <div className="app" style={{backgroundImage: `url('${fondonuevo}')`}}>
-        <h1 className="app__title">GALLETAS DE LA FORTUNA</h1> 
+        <h1 className="app__title">FORTUNE COOKIES</h1> 
         <article className="app__card">
         <ComponentPhrase 
           objetwithdata={phrase} 
