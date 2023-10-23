@@ -13,8 +13,10 @@ En este primer ejemplo estamos usando una api en internet que nos da frases en i
 
 git clone https://github.com/3p1c0s3nd/GalletaDeLaFortuna.git
 
-cd GalletaDeLaFortuna\n
-npm install\n
+cd GalletaDeLaFortuna
+
+npm install
+
 npm run dev
 
 
